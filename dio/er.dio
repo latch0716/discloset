@@ -1,0 +1,91 @@
+<mxfile host="65bd71144e">
+    <diagram name="ページ1" id="d8CI0lNI2DQaHyupYCYN">
+        <mxGraphModel dx="1125" dy="838" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="HMkPCI-35cjC-nzHi5u1-1" value="items" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry y="50" width="270" height="270" as="geometry"/>
+                </mxCell>
+                <mxCell id="HMkPCI-35cjC-nzHi5u1-2" value="image（NOT NULL）" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="HMkPCI-35cjC-nzHi5u1-1" vertex="1">
+                    <mxGeometry y="30" width="270" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="HMkPCI-35cjC-nzHi5u1-3" value="category_id（integer型, NOT NULL）" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="HMkPCI-35cjC-nzHi5u1-1" vertex="1">
+                    <mxGeometry y="60" width="270" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="HMkPCI-35cjC-nzHi5u1-6" value="color_id（integer型, NOT NULL）" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="HMkPCI-35cjC-nzHi5u1-1" vertex="1">
+                    <mxGeometry y="90" width="270" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="HMkPCI-35cjC-nzHi5u1-7" value="purchase_date（date型, NOT NULL）" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="HMkPCI-35cjC-nzHi5u1-1" vertex="1">
+                    <mxGeometry y="120" width="270" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="HMkPCI-35cjC-nzHi5u1-8" value="price（integer型）" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="HMkPCI-35cjC-nzHi5u1-1" vertex="1">
+                    <mxGeometry y="150" width="270" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="HMkPCI-35cjC-nzHi5u1-9" value="season_id（integer型）" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="HMkPCI-35cjC-nzHi5u1-1" vertex="1">
+                    <mxGeometry y="180" width="270" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="HMkPCI-35cjC-nzHi5u1-11" value="size_id（integer型）" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="HMkPCI-35cjC-nzHi5u1-1" vertex="1">
+                    <mxGeometry y="210" width="270" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="HMkPCI-35cjC-nzHi5u1-10" value="brand（string型）" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="HMkPCI-35cjC-nzHi5u1-1" vertex="1">
+                    <mxGeometry y="240" width="270" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="HMkPCI-35cjC-nzHi5u1-14" value="category(active_hash)" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="414" y="50" width="190" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="HMkPCI-35cjC-nzHi5u1-15" value="category" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="HMkPCI-35cjC-nzHi5u1-14" vertex="1">
+                    <mxGeometry y="30" width="190" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="HMkPCI-35cjC-nzHi5u1-18" value="size(active_hash)" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="414" y="260" width="190" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="HMkPCI-35cjC-nzHi5u1-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;endSize=15;startSize=15;startArrow=ERone;startFill=0;" parent="HMkPCI-35cjC-nzHi5u1-18" source="HMkPCI-35cjC-nzHi5u1-19" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="-64" y="-30" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="HMkPCI-35cjC-nzHi5u1-19" value="size" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="HMkPCI-35cjC-nzHi5u1-18" vertex="1">
+                    <mxGeometry y="30" width="190" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="HMkPCI-35cjC-nzHi5u1-20" value="season(active_hash)" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="414" y="190" width="190" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="HMkPCI-35cjC-nzHi5u1-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;endSize=15;startArrow=ERone;startFill=0;startSize=15;" parent="HMkPCI-35cjC-nzHi5u1-20" source="HMkPCI-35cjC-nzHi5u1-21" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="-64" y="10" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="HMkPCI-35cjC-nzHi5u1-21" value="season" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="HMkPCI-35cjC-nzHi5u1-20" vertex="1">
+                    <mxGeometry y="30" width="190" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="HMkPCI-35cjC-nzHi5u1-22" value="color(active_hash)" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="414" y="120" width="190" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="HMkPCI-35cjC-nzHi5u1-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;endSize=15;startSize=15;startArrow=ERone;startFill=0;" parent="HMkPCI-35cjC-nzHi5u1-22" source="HMkPCI-35cjC-nzHi5u1-23" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="-64" y="45" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="HMkPCI-35cjC-nzHi5u1-23" value="color" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="HMkPCI-35cjC-nzHi5u1-22" vertex="1">
+                    <mxGeometry y="30" width="190" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="HMkPCI-35cjC-nzHi5u1-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;endArrow=ERmany;endFill=0;endSize=15;startArrow=ERone;startFill=0;startSize=15;" parent="1" source="HMkPCI-35cjC-nzHi5u1-15" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="270" y="200" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="350" y="95"/>
+                            <mxPoint x="350" y="200"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="HMkPCI-35cjC-nzHi5u1-32" value="coordinates" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;align=center;fontSize=14;" parent="1" vertex="1">
+                    <mxGeometry y="370" width="270" height="56" as="geometry"/>
+                </mxCell>
+                <mxCell id="HMkPCI-35cjC-nzHi5u1-33" value="item（references型, NOT NULL, 外部キー）" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" parent="HMkPCI-35cjC-nzHi5u1-32" vertex="1">
+                    <mxGeometry y="26" width="270" height="30" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
