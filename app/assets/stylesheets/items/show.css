@@ -1,0 +1,47 @@
+.item-show {
+  display: flex;
+  justify-content: space-between;
+  background-color: #e7e7de;
+  padding: 10vh 7vw;
+}
+
+.item-show-contents-left {
+  width: 50vw;
+}
+
+.item-show-image {
+  width: 40vw;
+  height: auto;
+  background-color: #ffffff;
+}
+
+.item-show-contents-right {
+  width: 50vw;
+}
+
+.item-show-btn {
+  margin-bottom: 15px;
+}
+
+.edit-btn, .delete-btn {
+  text-decoration: none;
+  background-color: #826550;
+  color: #e7e7de;
+  border-radius: 8px;
+  padding: 2px 5px;
+  text-align: right;
+  margin: 0 5px ;
+}
+
+.item-show-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  border-bottom: 1px solid black;
+}
+
+.show-item-text {
+  color: #826550;
+  font-size: 18px;
+  font-weight: bold;
+}

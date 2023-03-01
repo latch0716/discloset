@@ -13,3 +13,10 @@
  *= require_tree .
  *= require_self
  */
+
+ * {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Zen Maru Gothic', sans-serif;
+
+}

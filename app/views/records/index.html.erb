@@ -1,0 +1,114 @@
+<%= render "shared/header"%>
+<div class="records-main">
+  <div class="records-title">
+    Statistics 
+  </div>
+  <div class="records-items-number">
+    所持アイテム数
+    <p class="item-number"><%= @records.count %></p>
+  </div>
+  <div class="records-contents">
+    <div class="pie-chart-top">
+      <div class="pie-chart">
+      <%= pie_chart Item.group(:category).count, options = {
+        donut: true,
+        colors: [ "#E9B8B8", "#EFCCAA", "#D8D5A8", "#9ECDC9", "#A8B7CD", "#C4AFC4" ],
+        label: "個数",
+        library: {
+          title: {
+            text: "カテゴリー",
+            align: "center",
+            verticalAlign: "middle"
+          },
+          chart: {
+            backgroundColor: "none"
+          },
+          plotOptions: {
+            pie: {
+              dataLabels: {
+                enabled: false
+              }
+            }
+          }
+        }
+        } %>
+      </div>
+      <div class="pie-chart">
+        <%= pie_chart Item.group(:color).count, options = {
+        donut: true,
+        colors: [ "#E9B8B8", "#EFCCAA", "#D8D5A8", "#9ECDC9", "#A8B7CD", "#C4AFC4" ],
+        label: "個数",
+        library: {
+          title: {
+            text: "カラー",
+            color: "#826550",
+            align: "center",
+            verticalAlign: "middle"
+          },
+          chart: {
+            backgroundColor: "none"
+          },
+          plotOptions: {
+            pie: {
+              dataLabels: {
+                enabled: false
+              }
+            }
+          }
+        }
+        } %>
+      </div>
+    </div>
+    <div class="pie-chart-bottom">
+      <div class="pie-chart">
+      <%= pie_chart Item.group(:season).count, options = {
+        donut: true,
+        colors: [ "#E9B8B8", "#EFCCAA", "#D8D5A8", "#9ECDC9", "#A8B7CD", "#C4AFC4" ],
+        label: "個数",
+        library: {
+          title: {
+            text: "シーズン",
+            align: "center",
+            verticalAlign: "middle"
+          },
+          chart: {
+            backgroundColor: "none"
+          },
+          plotOptions: {
+            pie: {
+              dataLabels: {
+                enabled: false
+              }
+            }
+          }
+        }
+      } %>
+      </div>
+      <div class="pie-chart">
+      <%= pie_chart Item.group(:size).count, options = {
+        donut: true,
+        colors: [ "#E9B8B8", "#EFCCAA", "#D8D5A8", "#9ECDC9", "#A8B7CD", "#C4AFC4" ],
+        label: "個数",
+        library: {
+          title: {
+            text: "サイズ",
+            align: "center",
+            verticalAlign: "middle"
+          },
+          chart: {
+            backgroundColor: "none"
+          },
+          plotOptions: {
+            pie: {
+              dataLabels: {
+                enabled: false
+              }
+            }
+          }
+        }
+      } %>
+      </div>
+    </div>
+  </div>
+</div>
+<%= render "shared/footer" %>

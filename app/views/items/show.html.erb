@@ -1,0 +1,44 @@
+<%= render "shared/header" %>
+
+<div class="item-show">
+  <div class="item-show-contents-left">
+    <%= image_tag @item.image ,class:"item-show-image" %>
+  </div>
+  <div class="item-show-contents-right">
+    <div class="item-show-btn">
+      <%= link_to '編集', edit_item_path(@item.id), class:"edit-btn" %>
+      <%= link_to '削除', item_path(@item.id), method: :delete, class:"delete-btn" %>
+    </div>
+    <div class="item-show-info">
+      <div class="show-item-text">カテゴリー</div>
+      <%= @item.category %>
+    </div>
+    <div class="item-show-info">
+      <div class="show-item-text">カラー</div>
+      <%= @item.color %>
+    </div>
+    <div class="item-show-info">
+      <div class="show-item-text">購入日</div>
+      <%= @item.purchase_date %>
+    </div>
+    <div class="item-show-info">
+      <div class="show-item-text">ブランド</div>
+      <%= @item.brand %>
+    </div>
+    <div class="item-show-info">
+      <div class="show-item-text">シーズン</div>
+      <%= @item.season %>
+    </div>
+    <div class="item-show-info">
+      <div class="show-item-text">サイズ</div>
+      <%= @item.size %>
+    </div>
+    <div class="item-show-info">
+      <div class="show-item-text">購入価格</div>
+      ¥<%= @item.price %>
+    </div>
+
+  </div>
+</div>
+
+<%= render "shared/footer" %>

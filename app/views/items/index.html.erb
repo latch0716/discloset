@@ -1,0 +1,53 @@
+<%= render "shared/header"%>
+
+<div class="nav">
+  <%# <%= link_to '新しい順', items_path(@itmes) %>
+  <%# <%= link_to '古い順', items_path(@items) %> 
+  <%# <%= form_with model: @items, url: search_path, method:get, local: true do |f| %>
+    <%# <%= f.select :keyword, [['投稿が新しい順', 'new'], ['投稿が古い順', 'old']] %>
+    <%# <%= f.submit "表示" %>
+  <%# <% end %> 
+</div>
+
+<div class='main'>
+  <%# <% unless @items.present? %> 
+  <p class="description">クローゼットの中身を丸見えにする「DISCLOSET」</p>
+  <ul class='usage-lists'>
+    <li class="list">
+      <%= image_tag("usage-form-icon.png", class:"form-icon") %>
+      <p class="icon-description">アイテムを登録すると…</p>
+    </li>
+    <li class="list">
+      <%= image_tag("usage-index-icon.png", class:"index-icon") %>
+      <p class="icon-description">一覧で確認できる！</p>
+    </li>
+    <li class="list">
+      <%= image_tag("usage-statistics-icon.png", class:"statistics-icon") %>
+      <p class="icon-description">色やアイテムを<br>データごとに確認！</p>
+    </li>
+    <li class="list">
+      <%= image_tag("usage-notification-icon.png", class:"notification-icon") %>
+      <p class="icon-description">未着用の服は<br>通知でお知らせ！<p>
+    </li>
+  </ul>
+  <%# <% end %> 
+</div>
+
+<div class="items-index">
+  <div class="items-title">ALL ITEM</div>
+  <ul class="items-lists">
+    <% @items.each do |item| %>
+    <li class="item">
+      <%= link_to item_path(item.id) do %>
+      <div class="item-image-content">
+        <%= image_tag item.image, class:"item-image" %>
+      </div>
+      <%end %>
+    </li>
+    <% end %>
+  </ul>
+</div>
+
+
+<%= render "shared/footer" %>
+

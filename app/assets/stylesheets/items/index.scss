@@ -1,0 +1,93 @@
+
+
+.main {
+  width: 100vw;
+  padding: 3vh 7vw;
+  background-color: #e7e7de;
+}
+
+.nav {
+  background-color: #BC9678;
+
+}
+
+.lists {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+.description {
+  font-size: 30px;
+  text-align: center;
+  color: #826550;
+  margin-bottom: 30px;
+}
+
+.usage-lists {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.list {
+  width: 17vw;
+  overflow: hidden;
+}
+
+.form-icon, .index-icon, .statistics-icon, .notification-icon {
+  width: 17vw;
+  margin-bottom: 20px;
+
+}
+
+.icon-description {
+  color: #826550;
+  text-align: center;
+  font-size: 20px;
+}
+
+// 登録アイテム一覧
+
+.items-index {
+  background-color: #e7e7de;
+  padding-bottom: 5vh;
+}
+
+.items-title {
+  color: #826550;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.items-lists {
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.item {
+  width: 21vw;
+  height: auto;
+  margin: 1vh auto;
+  background-color: #ffffff;
+}
+
+.item-image-content {
+  z-index: 2;
+  overflow: hidden;
+  box-shadow: 0px 5px 10px 0 rgba(0,0,0,0.25);
+}
+
+.item-image {
+  width: 20vw;
+  height: auto;
+  transition: 0.5s;
+}
+
+.item-image:hover {
+  transform: scale(1.07, 1.07);
+}

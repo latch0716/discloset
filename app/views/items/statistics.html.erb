@@ -1,0 +1,5 @@
+<%= render "shared/header"%>
+
+<%= pie_chart Item.group(:category).count %>
+
+<%= render "shared/footer" %>

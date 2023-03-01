@@ -1,0 +1,91 @@
+<%= render "shared/header" %>
+
+<body>
+  <div class="items-add-contents">
+
+    <div class="items-add-main">
+    <h2 class="items-add-title">アイテム編集</h2>
+    <%= form_with(model: @item, local: true) do |f| %>
+
+    <%# インスタンスを渡して、エラー発生時にメッセージが表示されるようにしましょう。%>
+    <%# render 'shared/error_messages', model: f.object %>
+    <%# //インスタンスを渡して、エラー発生時にメッセージが表示されるようにしましょう。%>
+
+    <%# アイテム画像 %>
+    <div class="img-upload">
+      <div class="weight-bold-text">
+        アイテム画像
+        <span class="indispensable">必須</span>
+      </div>
+      <div class="click-upload">
+        <label>
+          <%= f.file_field :image, id:"item-image" %>
+        </label>
+      </div>
+    </div>
+    <%# /アイテム画像 %>
+
+    <%# 必須情報 %>
+    <div class="items-detail">
+      <div class="weight-bold-text">必須情報</div>
+      <div class="form">
+        <div class="weight-bold-text">
+          カテゴリー
+          <span class="indispensable">必須</span>
+        </div>
+        <%= f.select :category, ['トップス', 'アウター', 'インナー', 'ボトムス', 'ワンピース', 'オールインワン', 'バッグ', 'シューズ', 'アクセサリー', 'その他'], {include_blank: '---'}, class: 'item-category' %>
+        <%# <%= f.collection_select(:category_id, Category.all, :id, :name, {}, {class:"select-box", id:"item-category"}) %>
+        <div class="weight-bold-text">
+          カラー
+          <span class="indispensable">必須</span>
+        </div>
+        <%= f.select :color, ['ホワイト', 'ブラック', 'グレー', 'ブラウン', 'ベージュ', 'グリーン', 'ブルー', 'パープル', 'イエロー', 'ピンク', 'レッド', 'オレンジ', 'シルバー', 'ゴールド', 'その他'], {include_blank: '---'}, class: 'item-color' %>
+        <%# <%= f.collection_select(:color_id, Color.all, :id, :name, {}, {class:"select-box", id:"item-color"}) %>
+        <div class="weight-bold-text">
+          購入日
+          <span class="indispensable">必須</span>
+        </div>
+        <%= f.date_field :purchase_date, class:"item-purchase" %>
+      </div>
+    </div>
+    <%# /必須情報 %>
+
+    <%# 追加情報 %>
+    <div class="items-detail">
+      <div class="weight-bold-text">追加情報</div>
+      <div class="form">
+        <div class="weight-bold-text">
+          ブランド
+        </div>
+        <%= f.text_field :brand, class:"item-brand" %>
+        <div class="weight-bold-text">
+          シーズン
+        </div>
+        <%= f.select :season, ['春', '夏', '秋', '冬', 'その他'], {include_blank: '---'}, class: 'item-season' %>
+        <%# <%= f.collection_select(:season_id, Season.all, :id, :name, {}, {class:"select-box", id:"item-season"}) %>
+        <div class="weight-bold-text">
+          サイズ
+        </div>
+        <%= f.select :size, ['XS以下', 'S', 'M', 'L', 'XL以上', 'その他'], {include_blank: '---'}, class: 'item-size' %>
+        <%# <%= f.collection_select(:size_id, Size.all, :id, :name, {}, {class:"select-box", id:"item-size"}) %>
+        <div class="weight-bold-text">
+          購入価格
+        </div>
+        <%= f.text_field :price, class:"item-price" %>
+      </div>
+    </div>
+    <%# /追加情報 %>
+
+    <%# 下部ボタン %>
+    <div class="add-btn-contents">
+      <%= f.submit "登録" ,class:"add-btn" %>
+      <%=link_to 'BACK', root_path, class:"back-btn" %>
+    </div>
+    <%# /下部ボタン %>
+  </div>
+  <% end %>
+  </div>
+
+</body>
+
+<%= render "shared/footer" %>
