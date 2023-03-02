@@ -29,10 +29,21 @@
   margin-right: 20px;
 }
 
-.home, .coordinate, .statistics, .others {
+.header-bar-title {
   text-decoration: none;
   font-size: 20px;
   color: #ffffff;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #DFCDBF;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all  0.4s ease;
+}
+
+.header-bar-title:hover {
+  background-color: #b6a598;
 
 }
 
@@ -44,6 +55,17 @@
   border: 2px solid #ffffff;
   border-radius: 8px;
   padding: 10px;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all  0.4s ease;
+
+}
+
+.header-btn:hover {
+  background-color: #8d7e72;
+  color: #ffffff;
+  border: 2px solid #8d7e72;
 }
 
 .nav {

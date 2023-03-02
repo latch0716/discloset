@@ -1,8 +1,23 @@
 <%= render "shared/header"%>
 
+<div class="category-bar">
+  <div class="category-top-bar">
+    <%= link_to 'トップス', '#', class:"category-bar-title" %>
+    <%= link_to 'アウター', '#', class:"category-bar-title" %>
+    <%= link_to 'インナー', '#', class:"category-bar-title" %>
+    <%= link_to 'ボトムス', '#', class:"category-bar-title" %>
+    <%= link_to 'ワンピース', '#', class:"category-bar-title" %>
+  </div>
+  <div class="category-bottom-bar">
+    <%= link_to 'オールインワン', '#', class:"category-bar-title" %>
+    <%= link_to 'バッグ', '#', class:"category-bar-title" %>
+    <%= link_to 'シューズ', '#', class:"category-bar-title" %>
+    <%= link_to 'アクセサリー', '#', class:"category-bar-title" %>
+    <%= link_to 'その他', '#', class:"category-bar-title" %>
+  </div>
+</div>
+
 <div class="nav">
-  <%# <%= link_to '新しい順', items_path(@itmes) %>
-  <%# <%= link_to '古い順', items_path(@items) %> 
   <%# <%= form_with model: @items, url: search_path, method:get, local: true do |f| %>
     <%# <%= f.select :keyword, [['投稿が新しい順', 'new'], ['投稿が古い順', 'old']] %>
     <%# <%= f.submit "表示" %>
@@ -35,6 +50,8 @@
 
 <div class="items-index">
   <div class="items-title">ALL ITEM</div>
+  <%= link_to '新しい順', items_path(new: "new") %>
+  <%= link_to '古い順', items_path(old: "old") %>
   <ul class="items-lists">
     <% @items.each do |item| %>
     <li class="item">

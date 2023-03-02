@@ -1,4 +1,35 @@
+.category-bar {
+  padding: 15px 10px;
+  background-color: #BC9678;
+}
 
+.category-top-bar {
+  display: flex;
+  justify-content: space-around;
+}
+
+.category-bottom-bar{
+  display: flex;
+  justify-content: space-around;
+}
+
+.category-bar-title {
+  width: 15vw;
+  text-align: center;
+  text-decoration: none;
+  color: #ffffff;
+  border-radius: 8px;
+  padding: 5px;
+  background-color: #BC9678;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all  0.4s ease;
+}
+
+.category-bar-title:hover {
+  background-color: #876b55;
+}
 
 .main {
   width: 100vw;
