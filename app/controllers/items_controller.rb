@@ -1,22 +1,12 @@
 class ItemsController < ApplicationController
   def index
-    if params[:new].present?
+    if params[:new]
       @items = Item.sort_new
-    elsif params[:old].present?
+    elsif params[:old]
       @items = Item.sort_old
     else
       @items = Item.all
     end
-    # @item1 = Item.where(category: "トップス")
-    # @item2 = Item.where(category: "アウター")
-    # @item3 = Item.where(category: "インナー")
-    # @item4 = Item.where(category: "ボトムス")
-    # @item5 = Item.where(category: "ワンピース")
-    # @item6 = Item.where(category: "オールインワン")
-    # @item7 = Item.where(category: "バッグ")
-    # @item8 = Item.where(category: "シューズ")
-    # @item9 = Item.where(category: "アクセサリー")
-    # @item10 = Item.where(category: "その他")
   end
 
   def new
