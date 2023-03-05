@@ -50,14 +50,14 @@
 
 <div class="items-index">
   <div class="items-title">ALL ITEM</div>
-  <%= link_to '新しい順', items_path(new: "new") %>
-  <%= link_to '古い順', items_path(old: "old") %>
+  <%= link_to '新しい順', items_path(new: "new"), class:"sort-title" %>
+  <%= link_to '古い順', items_path(old: "old"), class:"sort-title" %>
   <ul class="items-lists">
     <% @items.each do |item| %>
     <li class="item">
       <%= link_to item_path(item.id) do %>
       <div class="item-image-content">
-        <%= image_tag item.image, class:"item-image" %>
+        <%= image_tag item.image.variant(resize: '250x250'), class:"item-image" %>
       </div>
       <%end %>
     </li>
